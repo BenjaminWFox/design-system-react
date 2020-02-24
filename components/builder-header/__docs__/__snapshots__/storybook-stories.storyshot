@@ -40,7 +40,7 @@ exports[`DOM snapshots SLDSBuilderHeader After Successful Save 1`] = `
                   className="slds-icon slds-icon_x-small slds-icon-text-default"
                 >
                   <use
-                    xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#builder"
+                    href="/assets/icons/utility-sprite/svg/symbols.svg#builder"
                   />
                 </svg>
                 <span
@@ -81,7 +81,7 @@ exports[`DOM snapshots SLDSBuilderHeader After Successful Save 1`] = `
                       className="slds-icon slds-icon_x-small slds-icon-text-default"
                     >
                       <use
-                        xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#settings"
+                        href="/assets/icons/utility-sprite/svg/symbols.svg#settings"
                       />
                     </svg>
                     
@@ -131,7 +131,7 @@ exports[`DOM snapshots SLDSBuilderHeader After Successful Save 1`] = `
                         className="slds-icon slds-icon_x-small slds-icon-text-default"
                       >
                         <use
-                          xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#page"
+                          href="/assets/icons/utility-sprite/svg/symbols.svg#page"
                         />
                       </svg>
                       <span
@@ -158,7 +158,7 @@ exports[`DOM snapshots SLDSBuilderHeader After Successful Save 1`] = `
                         className="slds-icon slds-icon_x-small slds-icon-text-default"
                       >
                         <use
-                          xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"
+                          href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"
                         />
                       </svg>
                       
@@ -204,7 +204,7 @@ exports[`DOM snapshots SLDSBuilderHeader After Successful Save 1`] = `
                     className="slds-icon slds-icon_x-small slds-icon-text-default"
                   >
                     <use
-                      xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#back"
+                      href="/assets/icons/utility-sprite/svg/symbols.svg#back"
                     />
                   </svg>
                   <span
@@ -239,7 +239,7 @@ exports[`DOM snapshots SLDSBuilderHeader After Successful Save 1`] = `
                     className="slds-icon slds-icon_x-small slds-icon-text-default"
                   >
                     <use
-                      xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#help"
+                      href="/assets/icons/utility-sprite/svg/symbols.svg#help"
                     />
                   </svg>
                   <span
@@ -282,7 +282,7 @@ exports[`DOM snapshots SLDSBuilderHeader After Successful Save 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#undo"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#undo"
                 />
               </svg>
               <span
@@ -302,7 +302,7 @@ exports[`DOM snapshots SLDSBuilderHeader After Successful Save 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#redo"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#redo"
                 />
               </svg>
               <span
@@ -333,7 +333,7 @@ exports[`DOM snapshots SLDSBuilderHeader After Successful Save 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#cut"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#cut"
                 />
               </svg>
               <span
@@ -353,7 +353,7 @@ exports[`DOM snapshots SLDSBuilderHeader After Successful Save 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#copy"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#copy"
                 />
               </svg>
               <span
@@ -373,7 +373,7 @@ exports[`DOM snapshots SLDSBuilderHeader After Successful Save 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#paste"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#paste"
                 />
               </svg>
               <span
@@ -394,6 +394,7 @@ exports[`DOM snapshots SLDSBuilderHeader After Successful Save 1`] = `
               style={
                 Object {
                   "display": "inline-block",
+                  "lineHeight": "1",
                 }
               }
             >
@@ -403,6 +404,7 @@ exports[`DOM snapshots SLDSBuilderHeader After Successful Save 1`] = `
                 onFocus={[Function]}
                 onMouseEnter={[Function]}
                 onMouseLeave={[Function]}
+                tabIndex={0}
               >
                 Saved 5 mins ago
               </span>
@@ -419,7 +421,7 @@ exports[`DOM snapshots SLDSBuilderHeader After Successful Save 1`] = `
                 className="slds-button__icon slds-button__icon_left"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#right"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#right"
                 />
               </svg>
               Run
@@ -488,7 +490,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base 1`] = `
                   className="slds-icon slds-icon_x-small slds-icon-text-default"
                 >
                   <use
-                    xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#builder"
+                    href="/assets/icons/utility-sprite/svg/symbols.svg#builder"
                   />
                 </svg>
                 <span
@@ -529,7 +531,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base 1`] = `
                       className="slds-icon slds-icon_x-small slds-icon-text-default"
                     >
                       <use
-                        xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#settings"
+                        href="/assets/icons/utility-sprite/svg/symbols.svg#settings"
                       />
                     </svg>
                     
@@ -579,7 +581,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base 1`] = `
                         className="slds-icon slds-icon_x-small slds-icon-text-default"
                       >
                         <use
-                          xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#page"
+                          href="/assets/icons/utility-sprite/svg/symbols.svg#page"
                         />
                       </svg>
                       <span
@@ -606,7 +608,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base 1`] = `
                         className="slds-icon slds-icon_x-small slds-icon-text-default"
                       >
                         <use
-                          xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"
+                          href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"
                         />
                       </svg>
                       
@@ -652,7 +654,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base 1`] = `
                     className="slds-icon slds-icon_x-small slds-icon-text-default"
                   >
                     <use
-                      xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#back"
+                      href="/assets/icons/utility-sprite/svg/symbols.svg#back"
                     />
                   </svg>
                   <span
@@ -687,7 +689,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base 1`] = `
                     className="slds-icon slds-icon_x-small slds-icon-text-default"
                   >
                     <use
-                      xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#help"
+                      href="/assets/icons/utility-sprite/svg/symbols.svg#help"
                     />
                   </svg>
                   <span
@@ -751,7 +753,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Page Type Editable 1`] = `
                   className="slds-icon slds-icon_x-small slds-icon-text-default"
                 >
                   <use
-                    xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#builder"
+                    href="/assets/icons/utility-sprite/svg/symbols.svg#builder"
                   />
                 </svg>
                 <span
@@ -792,7 +794,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Page Type Editable 1`] = `
                       className="slds-icon slds-icon_x-small slds-icon-text-default"
                     >
                       <use
-                        xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#settings"
+                        href="/assets/icons/utility-sprite/svg/symbols.svg#settings"
                       />
                     </svg>
                     
@@ -842,7 +844,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Page Type Editable 1`] = `
                         className="slds-icon slds-icon_x-small slds-icon-text-default"
                       >
                         <use
-                          xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#page"
+                          href="/assets/icons/utility-sprite/svg/symbols.svg#page"
                         />
                       </svg>
                       <span
@@ -869,7 +871,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Page Type Editable 1`] = `
                         className="slds-icon slds-icon_x-small slds-icon-text-default"
                       >
                         <use
-                          xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"
+                          href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"
                         />
                       </svg>
                       
@@ -922,6 +924,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Page Type Editable 1`] = `
                   style={
                     Object {
                       "display": "inline-block",
+                      "lineHeight": "1",
                     }
                   }
                 >
@@ -945,7 +948,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Page Type Editable 1`] = `
                       className="slds-button__icon"
                     >
                       <use
-                        xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#edit"
+                        href="/assets/icons/utility-sprite/svg/symbols.svg#edit"
                       />
                     </svg>
                     <span
@@ -1002,6 +1005,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Page Type Editable 1`] = `
                   style={
                     Object {
                       "display": "inline-block",
+                      "lineHeight": "1",
                     }
                   }
                 >
@@ -1025,7 +1029,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Page Type Editable 1`] = `
                       className="slds-button__icon"
                     >
                       <use
-                        xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#edit"
+                        href="/assets/icons/utility-sprite/svg/symbols.svg#edit"
                       />
                     </svg>
                     <span
@@ -1061,7 +1065,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Page Type Editable 1`] = `
                     className="slds-icon slds-icon_x-small slds-icon-text-default"
                   >
                     <use
-                      xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#back"
+                      href="/assets/icons/utility-sprite/svg/symbols.svg#back"
                     />
                   </svg>
                   <span
@@ -1096,7 +1100,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Page Type Editable 1`] = `
                     className="slds-icon slds-icon_x-small slds-icon-text-default"
                   >
                     <use
-                      xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#help"
+                      href="/assets/icons/utility-sprite/svg/symbols.svg#help"
                     />
                   </svg>
                   <span
@@ -1160,7 +1164,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Toolbar 1`] = `
                   className="slds-icon slds-icon_x-small slds-icon-text-default"
                 >
                   <use
-                    xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#builder"
+                    href="/assets/icons/utility-sprite/svg/symbols.svg#builder"
                   />
                 </svg>
                 <span
@@ -1201,7 +1205,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Toolbar 1`] = `
                       className="slds-icon slds-icon_x-small slds-icon-text-default"
                     >
                       <use
-                        xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#settings"
+                        href="/assets/icons/utility-sprite/svg/symbols.svg#settings"
                       />
                     </svg>
                     
@@ -1251,7 +1255,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Toolbar 1`] = `
                         className="slds-icon slds-icon_x-small slds-icon-text-default"
                       >
                         <use
-                          xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#page"
+                          href="/assets/icons/utility-sprite/svg/symbols.svg#page"
                         />
                       </svg>
                       <span
@@ -1278,7 +1282,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Toolbar 1`] = `
                         className="slds-icon slds-icon_x-small slds-icon-text-default"
                       >
                         <use
-                          xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"
+                          href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"
                         />
                       </svg>
                       
@@ -1324,7 +1328,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Toolbar 1`] = `
                     className="slds-icon slds-icon_x-small slds-icon-text-default"
                   >
                     <use
-                      xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#back"
+                      href="/assets/icons/utility-sprite/svg/symbols.svg#back"
                     />
                   </svg>
                   <span
@@ -1359,7 +1363,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Toolbar 1`] = `
                     className="slds-icon slds-icon_x-small slds-icon-text-default"
                   >
                     <use
-                      xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#help"
+                      href="/assets/icons/utility-sprite/svg/symbols.svg#help"
                     />
                   </svg>
                   <span
@@ -1402,7 +1406,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Toolbar 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#undo"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#undo"
                 />
               </svg>
               <span
@@ -1422,7 +1426,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Toolbar 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#redo"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#redo"
                 />
               </svg>
               <span
@@ -1453,7 +1457,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Toolbar 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#cut"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#cut"
                 />
               </svg>
               <span
@@ -1473,7 +1477,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Toolbar 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#copy"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#copy"
                 />
               </svg>
               <span
@@ -1493,7 +1497,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Toolbar 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#paste"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#paste"
                 />
               </svg>
               <span
@@ -1520,7 +1524,7 @@ exports[`DOM snapshots SLDSBuilderHeader Base with Toolbar 1`] = `
                 className="slds-button__icon slds-button__icon_left"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#right"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#right"
                 />
               </svg>
               Run
@@ -1589,7 +1593,7 @@ exports[`DOM snapshots SLDSBuilderHeader Failed Save 1`] = `
                   className="slds-icon slds-icon_x-small slds-icon-text-default"
                 >
                   <use
-                    xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#builder"
+                    href="/assets/icons/utility-sprite/svg/symbols.svg#builder"
                   />
                 </svg>
                 <span
@@ -1630,7 +1634,7 @@ exports[`DOM snapshots SLDSBuilderHeader Failed Save 1`] = `
                       className="slds-icon slds-icon_x-small slds-icon-text-default"
                     >
                       <use
-                        xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#settings"
+                        href="/assets/icons/utility-sprite/svg/symbols.svg#settings"
                       />
                     </svg>
                     
@@ -1680,7 +1684,7 @@ exports[`DOM snapshots SLDSBuilderHeader Failed Save 1`] = `
                         className="slds-icon slds-icon_x-small slds-icon-text-default"
                       >
                         <use
-                          xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#page"
+                          href="/assets/icons/utility-sprite/svg/symbols.svg#page"
                         />
                       </svg>
                       <span
@@ -1707,7 +1711,7 @@ exports[`DOM snapshots SLDSBuilderHeader Failed Save 1`] = `
                         className="slds-icon slds-icon_x-small slds-icon-text-default"
                       >
                         <use
-                          xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"
+                          href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"
                         />
                       </svg>
                       
@@ -1753,7 +1757,7 @@ exports[`DOM snapshots SLDSBuilderHeader Failed Save 1`] = `
                     className="slds-icon slds-icon_x-small slds-icon-text-default"
                   >
                     <use
-                      xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#back"
+                      href="/assets/icons/utility-sprite/svg/symbols.svg#back"
                     />
                   </svg>
                   <span
@@ -1788,7 +1792,7 @@ exports[`DOM snapshots SLDSBuilderHeader Failed Save 1`] = `
                     className="slds-icon slds-icon_x-small slds-icon-text-default"
                   >
                     <use
-                      xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#help"
+                      href="/assets/icons/utility-sprite/svg/symbols.svg#help"
                     />
                   </svg>
                   <span
@@ -1831,7 +1835,7 @@ exports[`DOM snapshots SLDSBuilderHeader Failed Save 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#undo"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#undo"
                 />
               </svg>
               <span
@@ -1851,7 +1855,7 @@ exports[`DOM snapshots SLDSBuilderHeader Failed Save 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#redo"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#redo"
                 />
               </svg>
               <span
@@ -1882,7 +1886,7 @@ exports[`DOM snapshots SLDSBuilderHeader Failed Save 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#cut"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#cut"
                 />
               </svg>
               <span
@@ -1902,7 +1906,7 @@ exports[`DOM snapshots SLDSBuilderHeader Failed Save 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#copy"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#copy"
                 />
               </svg>
               <span
@@ -1922,7 +1926,7 @@ exports[`DOM snapshots SLDSBuilderHeader Failed Save 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#paste"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#paste"
                 />
               </svg>
               <span
@@ -1943,6 +1947,7 @@ exports[`DOM snapshots SLDSBuilderHeader Failed Save 1`] = `
               style={
                 Object {
                   "display": "inline-block",
+                  "lineHeight": "1",
                 }
               }
             >
@@ -1982,7 +1987,7 @@ exports[`DOM snapshots SLDSBuilderHeader Failed Save 1`] = `
                   className="slds-button__icon slds-icon-text-error"
                 >
                   <use
-                    xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#error"
+                    href="/assets/icons/utility-sprite/svg/symbols.svg#error"
                   />
                 </svg>
                 <span
@@ -2003,7 +2008,7 @@ exports[`DOM snapshots SLDSBuilderHeader Failed Save 1`] = `
                 className="slds-button__icon slds-button__icon_left"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#right"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#right"
                 />
               </svg>
               Run
@@ -2072,7 +2077,7 @@ exports[`DOM snapshots SLDSBuilderHeader Successful Save 1`] = `
                   className="slds-icon slds-icon_x-small slds-icon-text-default"
                 >
                   <use
-                    xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#builder"
+                    href="/assets/icons/utility-sprite/svg/symbols.svg#builder"
                   />
                 </svg>
                 <span
@@ -2113,7 +2118,7 @@ exports[`DOM snapshots SLDSBuilderHeader Successful Save 1`] = `
                       className="slds-icon slds-icon_x-small slds-icon-text-default"
                     >
                       <use
-                        xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#settings"
+                        href="/assets/icons/utility-sprite/svg/symbols.svg#settings"
                       />
                     </svg>
                     
@@ -2163,7 +2168,7 @@ exports[`DOM snapshots SLDSBuilderHeader Successful Save 1`] = `
                         className="slds-icon slds-icon_x-small slds-icon-text-default"
                       >
                         <use
-                          xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#page"
+                          href="/assets/icons/utility-sprite/svg/symbols.svg#page"
                         />
                       </svg>
                       <span
@@ -2190,7 +2195,7 @@ exports[`DOM snapshots SLDSBuilderHeader Successful Save 1`] = `
                         className="slds-icon slds-icon_x-small slds-icon-text-default"
                       >
                         <use
-                          xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"
+                          href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"
                         />
                       </svg>
                       
@@ -2236,7 +2241,7 @@ exports[`DOM snapshots SLDSBuilderHeader Successful Save 1`] = `
                     className="slds-icon slds-icon_x-small slds-icon-text-default"
                   >
                     <use
-                      xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#back"
+                      href="/assets/icons/utility-sprite/svg/symbols.svg#back"
                     />
                   </svg>
                   <span
@@ -2271,7 +2276,7 @@ exports[`DOM snapshots SLDSBuilderHeader Successful Save 1`] = `
                     className="slds-icon slds-icon_x-small slds-icon-text-default"
                   >
                     <use
-                      xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#help"
+                      href="/assets/icons/utility-sprite/svg/symbols.svg#help"
                     />
                   </svg>
                   <span
@@ -2314,7 +2319,7 @@ exports[`DOM snapshots SLDSBuilderHeader Successful Save 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#undo"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#undo"
                 />
               </svg>
               <span
@@ -2334,7 +2339,7 @@ exports[`DOM snapshots SLDSBuilderHeader Successful Save 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#redo"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#redo"
                 />
               </svg>
               <span
@@ -2365,7 +2370,7 @@ exports[`DOM snapshots SLDSBuilderHeader Successful Save 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#cut"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#cut"
                 />
               </svg>
               <span
@@ -2385,7 +2390,7 @@ exports[`DOM snapshots SLDSBuilderHeader Successful Save 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#copy"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#copy"
                 />
               </svg>
               <span
@@ -2405,7 +2410,7 @@ exports[`DOM snapshots SLDSBuilderHeader Successful Save 1`] = `
                 className="slds-button__icon"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#paste"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#paste"
                 />
               </svg>
               <span
@@ -2432,7 +2437,7 @@ exports[`DOM snapshots SLDSBuilderHeader Successful Save 1`] = `
                 }
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#check"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#check"
                 />
               </svg>
               
@@ -2453,7 +2458,7 @@ exports[`DOM snapshots SLDSBuilderHeader Successful Save 1`] = `
                 className="slds-button__icon slds-button__icon_left"
               >
                 <use
-                  xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#right"
+                  href="/assets/icons/utility-sprite/svg/symbols.svg#right"
                 />
               </svg>
               Run

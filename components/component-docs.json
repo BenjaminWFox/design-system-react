@@ -5617,13 +5617,10 @@
                                 "name": "union",
                                 "value": [
                                     {
+                                        "name": "node"
+                                    },
+                                    {
                                         "name": "string"
-                                    },
-                                    {
-                                        "name": "number"
-                                    },
-                                    {
-                                        "name": "bool"
                                     }
                                 ]
                             },
@@ -5890,10 +5887,22 @@
                 "returns": null
             },
             {
-                "name": "openDialog",
+                "name": "openDialogFromIcon",
                 "docblock": null,
                 "modifiers": [],
                 "params": [],
+                "returns": null
+            },
+            {
+                "name": "openDialog",
+                "docblock": null,
+                "modifiers": [],
+                "params": [
+                    {
+                        "name": "isRequestFromIcon",
+                        "type": null
+                    }
+                ],
                 "returns": null
             },
             {
@@ -6001,7 +6010,7 @@
                     "name": "func"
                 },
                 "required": false,
-                "description": "Date formatting function that formats the `value` prop (`value` is an ECMAScript `Date()` object) before rendering the `input` value. Please use an external library such as [MomentJS](https://github.com/moment/moment/) for date formatting and internationalization. _Tested with snapshot testing._\nThe default `formatter` function is:\n```\nformatter(date) {\n  return date\n   ? `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`\n   : '';\n}\n```",
+                "description": "Date formatting function that formats the `value` prop (`value` is an ECMAScript `Date()` object) and returns a string to be rendered as the `input` value. Please use an external library such as [MomentJS](https://github.com/moment/moment/) for date formatting and internationalization. _Tested with snapshot testing._\nThe default `formatter` function is:\n```\nformatter(date) {\n  return date\n   ? `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`\n   : '';\n}\n```",
                 "defaultValue": {
                     "value": "function(date) {\n    return date\n        ? `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`\n        : '';\n}",
                     "computed": false
@@ -6158,7 +6167,7 @@
                     "name": "func"
                 },
                 "required": false,
-                "description": "Custom function to parse date string from the `input` value and returns a `Date` object.  Please use an external library such as [MomentJS](https://github.com/moment/moment/) for date parsing and internationalization. The default `parser` passes the input value to ECMAScript `Date()` and _prays_ for a miracle. **Do not use the default parsing function in production.** _Tested with snapshot testing._\nThe default `parser function is:\n```\nparser(str) {\n  return new Date(str);\n}\n```",
+                "description": "Custom function to parse date string from the `input` value, which must return an ECMAScript `Date()` object.  Please use an external library such as [MomentJS](https://github.com/moment/moment/) for date parsing and internationalization. The default `parser` passes the input value to ECMAScript `Date()` and _prays_ for a miracle. **Do not use the default parsing function in production.** _Tested with snapshot testing._\nThe default `parser function is:\n```\nparser(str) {\n  return new Date(str);\n}\n```",
                 "defaultValue": {
                     "value": "function(str) {\n    lowPriorityWarning(\n        false,\n        `Please use an external library for date parsing and internationalization like MomentJS (https://github.com/moment/moment/) instead of the default parser.`\n    );\n    return new Date(str);\n}",
                     "computed": false
@@ -9919,6 +9928,176 @@
                 }
             }
         ]
+    },
+    "location-map": {
+        "description": "A location map component is used to find and show locations",
+        "methods": [
+            {
+                "name": "getId",
+                "docblock": "Get the LocationMap's HTML id. Generate a new one if no ID present.",
+                "modifiers": [],
+                "params": [],
+                "returns": null,
+                "description": "Get the LocationMap's HTML id. Generate a new one if no ID present."
+            },
+            {
+                "name": "handleClick",
+                "docblock": "Handles clicking of a location",
+                "modifiers": [],
+                "params": [
+                    {
+                        "name": "event"
+                    },
+                    {
+                        "name": "i"
+                    }
+                ],
+                "returns": null,
+                "description": "Handles clicking of a location"
+            }
+        ],
+        "props": {
+            "className": {
+                "type": {
+                    "name": "union",
+                    "value": [
+                        {
+                            "name": "array"
+                        },
+                        {
+                            "name": "object"
+                        },
+                        {
+                            "name": "string"
+                        }
+                    ]
+                },
+                "required": false,
+                "description": "CSS class names to be added with `slds-map` class. `array`, `object`, or `string` are accepted."
+            },
+            "classNameContainer": {
+                "type": {
+                    "name": "union",
+                    "value": [
+                        {
+                            "name": "array"
+                        },
+                        {
+                            "name": "object"
+                        },
+                        {
+                            "name": "string"
+                        }
+                    ]
+                },
+                "required": false,
+                "description": "CSS class names to be added to the container element. `array`, `object`, or `string` are accepted."
+            },
+            "defaultLocation": {
+                "type": {
+                    "name": "shape",
+                    "value": {
+                        "id": {
+                            "name": "string",
+                            "required": true
+                        },
+                        "name": {
+                            "name": "string",
+                            "required": true
+                        },
+                        "address": {
+                            "name": "string",
+                            "required": true
+                        }
+                    }
+                },
+                "required": true,
+                "description": "Accepts location object that will be shown if no location has been selected. Required\n * `id` : A unique identifier string for the location\n * `name` : Name of the location\n * `address` : Address of the location"
+            },
+            "id": {
+                "type": {
+                    "name": "string"
+                },
+                "required": false,
+                "description": "HTML id for component."
+            },
+            "labels": {
+                "type": {
+                    "name": "shape",
+                    "value": {
+                        "title": {
+                            "name": "string",
+                            "required": false
+                        }
+                    }
+                },
+                "required": false,
+                "description": "Labels\n * `title` - Title for the LocationMap component."
+            },
+            "locations": {
+                "type": {
+                    "name": "arrayOf",
+                    "value": {
+                        "name": "shape",
+                        "value": {
+                            "id": {
+                                "name": "string",
+                                "required": true
+                            },
+                            "name": {
+                                "name": "string",
+                                "required": true
+                            },
+                            "address": {
+                                "name": "string",
+                                "required": true
+                            }
+                        }
+                    }
+                },
+                "required": true,
+                "description": "Array of locations objects for the LocationMap component.**\nEach location object can contain:\n * `id` : A unique identifier string for the location\n * `name` : Name of the location\n * `address` : Address of the location"
+            },
+            "onClickLocation": {
+                "type": {
+                    "name": "func"
+                },
+                "required": false,
+                "description": "Callback function triggered when a location is selected"
+            },
+            "googleAPIKey": {
+                "type": {
+                    "name": "string"
+                },
+                "required": true,
+                "description": "Accepts a Google Map API Key that will be used for showing the map"
+            },
+            "selection": {
+                "type": {
+                    "name": "shape",
+                    "value": {
+                        "id": {
+                            "name": "string",
+                            "required": true
+                        },
+                        "name": {
+                            "name": "string",
+                            "required": true
+                        },
+                        "address": {
+                            "name": "string",
+                            "required": true
+                        }
+                    }
+                },
+                "required": false,
+                "description": "Accepts location object that will be shown when selected\n * `id` : A unique identifier string for the location\n * `name` : Name of the location\n * `address` : Address of the location"
+            }
+        },
+        "route": "location-map",
+        "display-name": "Location Map",
+        "SLDS-component-path": "/components/location-map",
+        "dependencies": []
     },
     "media-object": {
         "description": "When you need text and a figure next to each other, use a media object.",
@@ -16714,6 +16893,13 @@
         "description": "The PopoverTooltip component is variant of the Lightning Design System Popover component. This component wraps an element that triggers it to open. It must be a focusable child element (either a button or an anchor), so that keyboard users can navigate to it.",
         "methods": [
             {
+                "name": "getAnchoredNubbinStyles",
+                "docblock": null,
+                "modifiers": [],
+                "params": [],
+                "returns": null
+            },
+            {
                 "name": "getContent",
                 "docblock": null,
                 "modifiers": [],
@@ -16908,6 +17094,13 @@
                 "required": false,
                 "description": "CSS classes to be added to the popover dialog. That is the element with `.slds-popover` on it."
             },
+            "hasAnchoredNubbin": {
+                "type": {
+                    "name": "bool"
+                },
+                "required": false,
+                "description": "Enabling this hides the default nubbin, replacing it with one attached directly to the tooltip trigger. Note: `hasStaticAlignment` should be set to `true` if using this feature as auto-flipping anchored nubbins are not currently supported."
+            },
             "hasStaticAlignment": {
                 "type": {
                     "name": "bool"
@@ -16971,6 +17164,13 @@
                 },
                 "required": false,
                 "description": "Forces tooltip to be open. A value of `false` will disable any interaction with the tooltip."
+            },
+            "onRequestTargetElement": {
+                "type": {
+                    "name": "func"
+                },
+                "required": false,
+                "description": "Callback that returns an element or React `ref` to align the Tooltip with."
             },
             "triggerClassName": {
                 "type": {
@@ -17085,26 +17285,6 @@
     "tree": {
         "description": "A tree is visualization of a structure hierarchy. A branch can be expanded or collapsed. This is a controlled component, since visual state is present in the `nodes` data.",
         "methods": [
-            {
-                "name": "flattenTree",
-                "docblock": null,
-                "modifiers": [],
-                "params": [
-                    {
-                        "name": "root",
-                        "type": null
-                    },
-                    {
-                        "name": "treeIndex",
-                        "type": null
-                    },
-                    {
-                        "name": "firstLevel",
-                        "type": null
-                    }
-                ],
-                "returns": null
-            },
             {
                 "name": "handleSelect",
                 "docblock": null,

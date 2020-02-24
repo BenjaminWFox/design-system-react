@@ -8,6 +8,7 @@ import DataTableCell from '~/components/data-table/cell';
 import DataTableRowActions from '~/components/data-table/row-actions';
 import Dropdown from '~/components/menu-dropdown';
 import DropdownTrigger from '~/components/menu-dropdown/button-trigger';
+import Icon from '~/components/icon';
 import IconSettings from '~/components/icon-settings';
 import PageHeader from '~/components/page-header';
 import PageHeaderControl from '~/components/page-header/control';
@@ -323,17 +324,19 @@ class Example extends React.Component {
 				style={{
 					height: '200px',
 					width: '100%',
+					marginBottom: '150px',
 				}}
 			>
 				<IconSettings iconPath="/assets/icons">
-					<h3 className="slds-text-heading_medium slds-m-vertical_medium">
-						Fixed Header Layout
-					</h3>
 					<PageHeader
 						onRenderActions={actions}
-						iconAssistiveText="User"
-						iconCategory="standard"
-						iconName="lead"
+						icon={
+							<Icon
+								assistiveText={{ label: 'User' }}
+								category="standard"
+								name="lead"
+							/>
+						}
 						info="10 items • sorted by name"
 						joined
 						label="Leads"

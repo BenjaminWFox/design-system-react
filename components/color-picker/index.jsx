@@ -266,28 +266,31 @@ class ColorPicker extends React.Component {
 		checkProps(COLOR_PICKER, props, componentDoc);
 	}
 
-	// use getDerivedStateFromProps when available
-	componentWillReceiveProps(nextProps) {
+	componentDidUpdate(prevProps) {
+		// The following are only present to allow props to update the state if they get out of sync (for instance, the external store is updated).
 		const nextState = {};
 
-		if (nextProps.value) {
-			nextState.currentColor = nextProps.value;
+		if (this.props.value !== prevProps.value) {
+			nextState.currentColor = this.props.value;
 		}
 
-		if (nextProps.valueWorking) {
+		if (this.props.valueWorking !== prevProps.valueWorking) {
 			nextState.workingColor = ColorUtils.getNewColor(
 				{
-					hex: nextProps.valueWorking,
+					hex: this.props.valueWorking,
 				},
 				this.props.events.onValidateWorkingColor
 			);
 		}
 
-		if (nextProps.disabled !== undefined) {
-			nextState.disabled = nextProps.disabled;
+		if (this.props.disabled !== prevProps.disabled) {
+			nextState.disabled = this.props.disabled;
 		}
 
-		this.setState(nextState);
+		if (Object.entries(nextState).length !== 0) {
+			// eslint-disable-next-line react/no-did-update-set-state
+			this.setState(nextState);
+		}
 	}
 
 	getInput({ labels }) {
@@ -495,14 +498,21 @@ class ColorPicker extends React.Component {
 
 	handleHexInputChange = (event, { labels }) => {
 		const currentColor = event.target.value;
-		const isValid = this.props.events.onValidateColor
-			? this.props.events.onValidateColor(event.target.value)
-			: ColorUtils.isValidHex(event.target.value);
+		const namedColorHex = ColorUtils.getHexFromNamedColor(currentColor);
+		let isValid = false;
+
+		if (this.props.events.onValidateColor) {
+			isValid = this.props.events.onValidateColor(currentColor);
+		} else {
+			isValid = namedColorHex ? true : ColorUtils.isValidHex(currentColor);
+		}
+
 		this.setState({
 			currentColor,
 			workingColor: ColorUtils.getNewColor(
 				{
-					hex: currentColor,
+					hex: namedColorHex || currentColor,
+					name: namedColorHex ? currentColor.toLowerCase() : null,
 				},
 				this.props.events.onValidateWorkingColor
 			),
